@@ -34,13 +34,17 @@
         grid-area: footer;
     }    
 /*header universal container mobile*/
+#gridIndex {
+    background-image: url(./assets/Imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
         width: auto;
-        height: auto;
-        
+        height: auto;        
     }
     .headerTop {
         width: auto;
@@ -140,7 +144,7 @@
         height: auto;
     }
 
-/*desarrollo index*/
+/*desarrollo index mobile*/
     .firstBox {
         width: auto;
         height: auto;
