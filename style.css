@@ -16,9 +16,10 @@
         "header"
         "seccion"
         "footer";
-        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0fr 1fr 1fr 0.5fr;
         width: auto;
         height: 100vh;
+        
     }
     header {
         grid-area: header;
@@ -39,6 +40,7 @@
         justify-content: center;
         width: auto;
         height: auto;
+        
     }
     .headerTop {
         width: auto;
@@ -59,11 +61,13 @@
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        justify-content: right;
+        padding: 20px;
+        
     }
     .menu-icon img {
-        width: 10%;
+        width: 5%;
     }
     .headerMenu ul {
         display: block;
@@ -74,6 +78,7 @@
         height: auto;
         right: 0;
         border-radius: 20px;
+        margin: 60px 0;
     }
     .headerMenu ul li {
         padding: 0.5rem;
@@ -89,7 +94,7 @@
     }
     .headerMenu
     #check:checked ~ ul {
-        left: 0;
+        left: auto;
         transition:all .25s;
     }
 /*search header index "top" mobile*/
@@ -104,7 +109,6 @@
         padding: 30px 0;
         border-radius: 5px;
         display: flex;
-        justify-content: baseline;
         align-items: center;
         width: auto;
         height: auto;
