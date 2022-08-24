@@ -327,6 +327,7 @@
     grid-template-columns: 2fr 1fr;
     margin: 0 10px;
 }
+    
 header {
     grid-area: header;
 }
@@ -348,6 +349,12 @@ footer {
     grid-template-rows: 0.5fr 2fr;
     width: 100%;
 }
+.container__nosotros {
+    display: grid;  
+}
+.container__nosotros .centerNosotros {
+    display: none;
+}
 /*top header universal*/
 .headerTop {
     display: grid;
@@ -362,18 +369,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.headerTop__nosotros {
-    display: grid;
-    grid-template-rows: 0.5fr;
-    width: auto;
-    height: 100%;
-    border-radius: 10px;
-    margin: 0 10px;
-    align-items: center;
-    border-bottom: solid black 2px;
-}
-
-
 /*search header universal*/
 .searchHeader {
     background: linear-gradient(to right, #e0ca9642, #805b058c);
@@ -394,7 +389,7 @@ footer {
 .searchHeader a img {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 20px;
 }
 .searchHeader input {
     width: 30%;
@@ -410,7 +405,8 @@ footer {
 }
 .headerBottom .logo {
     flex-grow: 1;
-    width: 10%;
+    width: 5%;
+    margin: 10px;
 }
 .headerBottom .tittle {
     flex-grow: 10;
@@ -419,7 +415,7 @@ footer {
 .headerBottom .tittle h1 {
     width: 100%;
     height: auto;
-    font-size: 80px;
+    font-size: 60px;
     font-family: "Oswald";
     text-shadow: 5px -1px 5px white;
 }
@@ -485,37 +481,13 @@ footer {
     font-family:"oswald";
     background-color: #53544070;
 }
-/*center nosotros fondo*/
-.centerNosotros {
-    background-image: url(./assets/Imagenes/54e4feb73ad47_837_627!.jpg) ;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-}
+
 /*center productos fondo*/
 .centerProductos {
     background-image: url(./assets/Imagenes/portadaproductos.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size:cover;
-}
-/*center distribuidores fondo*/
-.centerDistribuidores {
-        background-image: url(./assets/Imagenes/portadadistribuidores.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: auto;
-        height: auto;
-}
-/*center contactos fondo*/
-.centerContacto {
-        background-image: url(./assets/Imagenes/portadacontacto.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: auto;
-        height: auto;
 }
 
 /*menu nav universal*/
@@ -525,24 +497,24 @@ footer {
     width: auto;
     height: auto;
     margin: 0 10px;
-    padding: 20px;
+    padding: 5px;
 }
 .headerMenu ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
 }
 .headerMenu ul li .items {
     display: flex;
+    justify-content: center;
     width: 100%;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     text-decoration: none;
     color: rgb(255, 250, 240);
-    border-right: solid #614504 2px;
-    border-left: #614504 solid 2px;
+    margin: 20px;
 }
 #check {
     display: none;
@@ -555,7 +527,7 @@ footer {
     background-color: #FAE4B1;
     border: solid #614504 3px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 }
 /*footer universal*/
 #footer {
@@ -691,10 +663,12 @@ footer {
 .sectionContainer {
     display: grid;
     grid-template-rows: 1 3 1 3;
-    border: solid black 10px;
     border-radius: 5px;
     gap: 20px;
     margin: 10px 10px;
+    background-image: url(./assets/Imagenes/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .sectionContainer .tittle {
     width: 100%;
@@ -702,6 +676,8 @@ footer {
     text-align: center;
     text-decoration: underline;
     font-size: 40px;
+    color: #94b2d8;
+    text-shadow: 2px 2px 2px #1d1c1c;
 }
 .sectionBox-one {
     display: flex;
@@ -722,6 +698,8 @@ footer {
     font-size: 20px;
     justify-content: center ;
     text-align: center;
+    color: white;
+    text-shadow: -1px 1px 13px #000000;
 }
 .sectionBox-two p {
     width: 100%;
@@ -730,6 +708,8 @@ footer {
     text-align: center;
     padding: 0 100px;
     margin-bottom: 30px;
+    color: white;
+    text-shadow: -1px 1px 13px #000000;
 }
 /*desarrollo pagina productos*/
 .products {
