@@ -450,7 +450,9 @@ footer {
     height: auto;
     margin: 30px;
     border-radius: 20px;
-    background: radial-gradient(#E0CA96, #805b05);
+    background-image: url(./assets/Imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 7px 13px 37px #000;
 }
 .indexSlogan{
@@ -462,12 +464,16 @@ footer {
 }
 .indexSlogan p {
     text-align: center;
-    font-family: "Oswald" , sans-serif; 
-    color: rgb(254, 254, 254);
-    text-shadow: 5px 4px 3px #250808;
+    font-family: "Oswald" , sans-serif;
+    background: linear-gradient(#be8616, #ec6f1c);
+    color: transparent;
+    text-shadow: 1px 1px 0px #7a7a7a73;
     font-size: 30px;
     padding: 30px;   
     border-right: solid black 2px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 3s linear infinite;
 }
 .imgCenter { 
     display: flex;
@@ -845,5 +851,13 @@ footer {
     }
     100% {
         opacity:1
+    }
+}
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(30deg);
     }
 }
