@@ -564,7 +564,7 @@ footer {
 }
 /*menu nav universal*/
 .headerMenu {
-    background-color: #805b0596;
+    background-image: url(./assets/Imagenes/footer.jpg);
     border-radius: 10px;
     width: auto;
     height: auto;
@@ -766,7 +766,7 @@ footer {
     padding: 10px 30px;
     text-align: center;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 25px;
     color: #94b2d8;
     text-shadow: 2px 2px 2px #1d1c1c;
 }
@@ -780,20 +780,20 @@ footer {
 }
 .sectionBox-one .boxVideo {
     justify-content: center;
-    padding: 10%;
     width: 100%;
 }
 .sectionBox-one .textBox {
-    padding: 50px 10px;
+    padding: 10px 10px;
 }
 .sectionBox-one .boxVideo video {
     width: 100%;
+    padding: 50px 0;
 }
 .sectionBox-one p{
     width: 100%;
     height: auto;
     padding: 10px;
-    font-size: 12px;
+    font-size: 16px;
     justify-content: center ;
     text-align: center;
     color: white;
