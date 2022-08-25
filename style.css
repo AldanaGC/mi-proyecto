@@ -180,7 +180,13 @@
         border-top: 2px black solid;
         padding: 20px;
         font-family: 'Times New Roman', Times, serif;
-    
+    }
+    #footer .firstColumn .imgFooter {
+        display: flex;
+        justify-content: center;
+    }
+    #footer .imgFooter img {
+        width: 10%;
     }
     .thirthColumn {
         display: none;
