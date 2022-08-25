@@ -529,9 +529,9 @@ footer {
 .indexSlogan p {
     text-align: center;
     font-family: "Oswald" , sans-serif;
-    background: linear-gradient(#be8616, #ec6f1c);
+    background: linear-gradient(#ffe6b3, #99440c);
     color: transparent;
-    text-shadow: 1px 1px 0px #7a7a7a73;
+    text-shadow: 1px 1px 0px #9f3333a1;
     font-size: 30px;
     padding: 30px;   
     border-right: solid black 2px;
@@ -660,7 +660,8 @@ footer {
 }
 /*desarrollo index*/
 .firstBox {
-    background-color:#503f1961;
+    background-image: url(./assets/Imagenes/backgroundGeneral.jpg);
+    background-size: cover;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -682,7 +683,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    background-color: #FAE4B1;
+    background-color: #99917f;
     border-radius: 20px;
     box-shadow: 7px 13px 37px #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
