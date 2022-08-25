@@ -599,8 +599,10 @@ footer {
 #footer {
     display: grid;
     gap: 20px;
-    grid-template-columns: 2fr 2fr 2fr;
-    background-color: rgb(236, 236, 228);
+    grid-template-columns: 1fr 2fr 1fr;
+    background-image: url(./assets/Imagenes/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -609,8 +611,19 @@ footer {
     border-top: black solid 1px;
     border-radius: 5px;
     margin: 20px auto;
+    text-align: center;
 }
-
+#footer .firstColumn h5 {
+    padding: 20px 0;
+}
+#footer .firstColumn .imgFooter {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+#footer .firstColumn img {
+    width: 40%;
+}
 /*footer segunda columna*/
 #footer .secondColumn {
     width: 100%;
@@ -625,6 +638,11 @@ footer {
     text-align: center;
     text-decoration: none;
     padding: 2px;
+    color: #000000;
+    cursor: pointer;
+}
+#footer .secondColumn a:hover {
+    color: white;
 }
 /*footer tercer columna*/
 #footer .thirthColumn {
@@ -655,8 +673,8 @@ footer {
 #footer .thirthColumn .redes img {
     align-items: center;
     justify-content: center;
-    width: 80%;
-    border-radius: 20px;
+    width: 60%;
+    border-radius: 50%;
 }
 /*desarrollo index*/
 .firstBox {
