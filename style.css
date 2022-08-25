@@ -759,6 +759,7 @@ footer {
     height: auto;
     padding: 0 200px;
 }
+
 .clasif h3 {
     background-color: beige;
     padding: 20px;
@@ -771,6 +772,11 @@ footer {
     gap: 10px;
     height: auto;
     padding: 20px;
+}
+.items1 img:hover {
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
 }
 .one {
     display: flex;
