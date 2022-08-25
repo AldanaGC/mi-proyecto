@@ -46,12 +46,15 @@
         width: auto;
         height: 100%;        
     }
+    .container__productos {
+        display: grid;
+    }
     .headerTop {
         width: auto;
         height: auto;
     }
      /*center mobile*/
-     .centerIndex, .centerProductos, .centerNosotros, .centerDistribuidores, .centerContacto{
+     .centerIndex, .centerNosotros, .centerDistribuidores, .centerContacto{
         display: none;
     }
 /*menu universal mobile*/
@@ -213,6 +216,7 @@
         padding: 20px;
     }
     /*desarrollo PRODUCTOS mobile*/
+
     .products {
         width: 100%;
         height: auto;
@@ -355,7 +359,7 @@ footer {
     grid-area: footer;
 }
 /* header universal*/
-.container {
+.container, .container__productos {
     display: grid;
     grid-template-rows: 0.5fr 2fr;
     width: 100%;
@@ -366,6 +370,7 @@ footer {
 .container__nosotros .centerNosotros {
     display: none;
 }
+
 /*top header universal*/
 .headerTop {
     display: grid;
@@ -493,7 +498,7 @@ footer {
     transition: 0.5s ease;
 }
 /*centerOthers*/
-.centerNosotros, .centerProductos, .centerDistribuidores, .centerContacto .nosotrosText {
+.centerNosotros, .centerDistribuidores, .centerContacto .nosotrosText {
     width: 100%;
     padding: 300px;
     text-align: center;
@@ -501,14 +506,6 @@ footer {
     text-shadow: 3px 3px 3px #f4ebcf;
     font-family:"oswald";
     background-color: #53544070;
-}
-
-/*center productos fondo*/
-.centerProductos {
-    background-image: url(./assets/Imagenes/portadaproductos.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size:cover;
 }
 
 /*menu nav universal*/
@@ -733,6 +730,11 @@ footer {
     text-shadow: -1px 1px 13px #000000;
 }
 /*desarrollo pagina productos*/
+#carouselOnly {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
 .products {
     width: 100%;
     height: auto;
