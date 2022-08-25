@@ -193,16 +193,30 @@
     #gridOthers .sectionContainer {
         display: grid;
         grid-template-rows: auto;
+        background-image: url(./assets/Imagenes/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     #gridOthers .sectionContainer .tittle {
-        font-size: 20px;
         border-bottom: 2px black solid;
+        padding: 0 20px;
+    }
+    #gridOthers .sectionContainer .tittle h2 {
+        font-size: 15px;
+        text-shadow: white 3px -1px 3px;
     }
     #gridOthers .sectionBox-one {
         margin: 10px 20px;
         border-top: solid black 1px;
         border-bottom: solid black 1px;
         padding: 20px;
+        background-color: #00000063;
+    }
+    #gridOthers .sectionBox-one p {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8px;
     }
     #gridOthers .sectionContainer .sectionBox-one video {
         display:none;
@@ -216,6 +230,13 @@
         border-top: solid black 1px;
         border-bottom: solid black 1px;
         padding: 20px;
+        background-color: #00000063;
+
+    }
+    #gridOthers .sectionBox-two p {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8px;
     }
     /*desarrollo PRODUCTOS mobile*/
 
