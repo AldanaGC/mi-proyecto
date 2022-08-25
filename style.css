@@ -497,17 +497,6 @@ footer {
     filter: blur(4px);
     transition: 0.5s ease;
 }
-/*centerOthers*/
-.centerNosotros, .centerDistribuidores, .centerContacto .nosotrosText {
-    width: 100%;
-    padding: 300px;
-    text-align: center;
-    font-size: 60px;
-    text-shadow: 3px 3px 3px #f4ebcf;
-    font-family:"oswald";
-    background-color: #53544070;
-}
-
 /*menu nav universal*/
 .headerMenu {
     background-color: #805b0596;
