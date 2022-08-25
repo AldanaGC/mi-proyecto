@@ -17,7 +17,7 @@
         "header"
         "seccion"
         "footer";
-        grid-template-rows: 0fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr;
         width: auto;
         height: 100vh;  
     }
@@ -97,7 +97,7 @@
     .headerMenu ul li a {
         color: #614504;
         font-family: "Oswald";
-        font-size: 30px;
+        font-size: px;
     }
     .headerMenu
     #check:checked ~ ul {
@@ -292,12 +292,12 @@
         position: absolute;
         text-align: center;
         background-color: #00000075;
-        width: 30%;
+        width: 20%;
         border-radius: 5px;
-        margin-bottom: 10px;
     }
     .textOne h6 {
         color: white;
+        font-size: 10px;
     }
     .one img {
         width: 100%;
@@ -728,16 +728,22 @@ footer {
 }
 .sectionBox-one {
     display: flex;
-    justify-content: baseline;
+    justify-content: space-between;
     width: 100%;
     height: auto;
     padding: 10px;
     border-bottom: 2px solid black;
 }
-.sectionBox-one video {
-    display: flex;
+.sectionBox-one .boxVideo {
     justify-content: center;
-    width: 50%;
+    padding: 10%;
+    width: 100%;
+}
+.sectionBox-one .textBox {
+    padding: 50px 10px;
+}
+.sectionBox-one .boxVideo video {
+    width: 100%;
 }
 .sectionBox-one p{
     width: 100%;
