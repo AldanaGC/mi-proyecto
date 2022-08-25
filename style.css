@@ -912,18 +912,24 @@ footer {
 .contact {
     display: grid;
     grid-template-rows: auto;
-    margin: 30px;    
+    margin: 30px;
+    background-image: url(./assets/Imagenes/portadacontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px;
 }
 .contact h2 {
     border-bottom: solid black 2px;
     border-left: black solid 2px;
     padding: 20px;
-    font-size: 50px;
+    font-size: 30px;
+    text-shadow: #ffffffdb -2px -2px 3px;
 }
 .contact p {
     margin: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    text-shadow: #ffffffdb -1px 0px 2px;
 }
 .formContainer {
     display: grid;
@@ -933,11 +939,21 @@ footer {
 .formContainer form {
     display: flex;
     flex-direction: column;
+    padding: 0px 150px;
 }
 .formContainer form input, textarea {
     margin: 10px 50px;
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 5px;
+    font-size: 10px;
+}
+.formContainer h4 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.formContainer .boton {
+    cursor: pointer;
 }
 }
 @keyframes aparecer {
