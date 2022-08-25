@@ -429,6 +429,7 @@ footer {
     animation-duration: 5s;
 }
 .headerBottom .tittle {
+    font-family: "oswald";
     flex-grow: 10;
     padding: 10px;
 }
