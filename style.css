@@ -200,6 +200,7 @@
     }
     #gridOthers .sectionContainer .tittle {
         border-bottom: 2px black solid;
+        margin: 10px 0;
         padding: 0 20px;
     }
     #gridOthers .sectionContainer .tittle h2 {
@@ -305,12 +306,30 @@
     }
 /*desarrollo distribuidores mobile*/
 .sectionContainer .list {
-    margin: 0 10px;
+    padding: 0 50px;
+    border-radius: 10px;
+}
+.sectionContainer .list ul {
+    background-color: #e2de9a4d;
 }
 .sectionContainer .list li {
     border-bottom: black solid 1px;
     list-style: none;
-    font-size: 30px;
+    font-size: 10px;
+    padding: 20px;
+}
+.sectionContainer .list li:hover {
+    color: white;
+}
+.sectionContainer .iframe {
+    width: 100%;
+    background-color: #0000004a;
+    border-radius: 1px;
+    padding: 20px;
+}
+.sectionContainer .iframe iframe {
+    border-radius: 50%;
+    width: 100%;
 }
 /*desarrollo contacto mobile*/
     .contact {
