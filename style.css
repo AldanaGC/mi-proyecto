@@ -412,10 +412,10 @@
     #gridOthers {
      display: grid;
      grid-template-areas: 
-     "header"
-     "menu"
-     "seccion" 
-     "footer" ;
+     "header header"
+     "navegador navegador"
+     "seccion seccion" 
+     "footer footer" ;
      grid-template-rows: auto; 
      grid-template-columns: none;
      width: auto;
