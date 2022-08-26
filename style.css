@@ -29,7 +29,6 @@
         "seccion2"
         "seccion"
         "footer";
-
     }
     header {
         grid-area: header;
@@ -256,7 +255,7 @@
     #gridOthers .sectionBox-one p {
         color: white;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 8px;
+        font-size: 16px;
     }
     #gridOthers .sectionContainer .sectionBox-one video {
         display:none;
@@ -276,7 +275,7 @@
     #gridOthers .sectionBox-two p {
         color: white;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 8px;
+        font-size: 16px;
     }
     /*desarrollo PRODUCTOS mobile*/
 
@@ -428,7 +427,7 @@
     display: grid;
     grid-template-areas: 
     "header header"
-    "menu menu"
+    "navegador navegador"
     "seccion2 seccion2"
     "seccion info"
     "footer footer";
@@ -444,7 +443,7 @@ header {
     grid-area: header;
 }
 nav {
-    grid-area: menu;
+    grid-area: navegador;
 }
 article {
     grid-area: seccion2;
@@ -789,7 +788,7 @@ footer {
 }
 .slider {
     width: 100%;
-    margin: auto;
+    margin: 10px 0;
     height: auto;
     overflow: hidden;
 }
@@ -860,7 +859,7 @@ footer {
 .sectionBox-two p {
     width: 100%;
     height: auto;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     padding: 0 100px;
     margin-bottom: 30px;
