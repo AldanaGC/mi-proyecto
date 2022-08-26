@@ -10,7 +10,7 @@
 
 @media (max-width:767px){
     /*gridmobile index*/
-    #gridIndex, #gridOthers {
+    #gridOthers {
         display: grid;
         grid-template-areas: 
         "navegador"
@@ -21,7 +21,16 @@
         width: auto;
         height: 100vh;  
     }
-    
+    #gridIndex {
+        display: grid;
+        grid-template-areas: 
+        "navegador"
+        "header"
+        "seccion2"
+        "seccion"
+        "footer";
+
+    }
     header {
         grid-area: header;
     }
@@ -30,6 +39,9 @@
     }
     section {
         grid-area: seccion;
+    }
+    article {
+        grid-area: seccion2;
     }
     footer {
         grid-area: footer;
@@ -169,6 +181,27 @@
     }
     .secondBox {
         display: none;
+    }
+    .slider {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+        overflow: hidden;
+        border: solid black 4px;
+        background-color: #000;
+    }
+    .slider ul{
+        display: flex;
+        width: 300%;
+        padding: 0;
+        animation: slider 20s infinite;
+    }
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    .slider li img {
+        width: 100%;
     }
     /*footer universal*/
     #footer {
@@ -396,12 +429,13 @@
     grid-template-areas: 
     "header header"
     "menu menu"
+    "seccion2 seccion2"
     "seccion info"
     "footer footer";
     width: auto; 
     height: 100vh;
     gap: 5px;
-    grid-template-rows: 1fr 1fr 0.5fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr;
     margin: 0 10px;
 }
@@ -411,6 +445,9 @@ header {
 }
 nav {
     grid-area: menu;
+}
+article {
+    grid-area: seccion2;
 }
 section {
     grid-area: seccion;
@@ -750,6 +787,27 @@ footer {
 .secondBox .contentTwo a:hover {
     color: black;
 }
+.slider {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: slider 20s infinite;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.slider li img {
+    width: 100%;
+
+}
+
 /*desarrollo sobre nosotros*/
 .sectionContainer {
     display: grid;
@@ -996,4 +1054,14 @@ footer {
     100% {
         filter: hue-rotate(30deg);
     }
+}
+@keyframes slider {
+    0% {margin-left: 0;}
+    33% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
 }
