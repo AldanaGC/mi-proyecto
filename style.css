@@ -453,7 +453,7 @@ footer {
     grid-area: footer;
 }
 /* header universal*/
-.container, .container__productos {
+.container__index, .container__productos {
     display: grid;
     grid-template-rows: 0.5fr 2fr;
     width: 100%;
@@ -633,86 +633,7 @@ footer {
     padding: 10px;
 }
 /*footer universal*/
-#footer {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 2fr 1fr;
-    background-image: url(./assets/Imagenes/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    border-top: black solid 1px;
-    border-radius: 5px;
-    margin: 20px auto;
-    text-align: center;
-}
-#footer .firstColumn h5 {
-    padding: 20px 0;
-}
-#footer .firstColumn .imgFooter {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-}
-#footer .firstColumn img {
-    width: 40%;
-}
-/*footer segunda columna*/
-#footer .secondColumn {
-    width: 100%;
-    padding: 20px 50px;
-    align-items: center;
-    justify-items: center;
-    border-right: 2px black solid;
-    border-left: #000 2px solid;
-}
-#footer .secondColumn a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 2px;
-    color: #000000;
-    cursor: pointer;
-}
-#footer .secondColumn a:hover {
-    color: white;
-}
-/*footer tercer columna*/
-#footer .thirthColumn {
-    display: grid;
-    grid-template-rows: 1 2;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-}
-#footer .thirthColumn h6 {
-    width: 100%;
-    text-align: center;
-}
-#footer .thirthColumn .redes {
-    width: 100%;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-#footer .thirthColumn .redes a {
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    margin: 0 10px;
-}
-#footer .thirthColumn .redes img {
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    border-radius: 50%;
-}
+
 /*desarrollo index*/
 .firstBox {
     background-image: url(./assets/Imagenes/backgroundGeneral.jpg);
@@ -786,6 +707,7 @@ footer {
     margin: 10px 0;
     height: auto;
     overflow: hidden;
+    padding: 50px;
 }
 .slider ul{
     display: flex;
@@ -799,6 +721,8 @@ footer {
 }
 .slider li img {
     width: 100%;
+    padding:0 50px;
+    border-radius: 3px;
 
 }
 
