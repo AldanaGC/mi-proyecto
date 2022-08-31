@@ -151,8 +151,8 @@
         width: 100%;
         height: auto;
         font-size: 30px;
-        font-family: "Oswald";
-        text-shadow: 3px 3px 0px #edb67d;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: 3px 1px 3px #e8d3bd;
     }
     .headerBottom .logo img {
         width: 100%; 
