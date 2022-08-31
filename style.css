@@ -17,7 +17,7 @@
         "header"
         "seccion"
         "footer";
-        grid-template-rows: 0.1fr 0.1fr auto 0.1fr;
+        grid-template-rows: auto;
         width: auto;
         height: 100vh;  
     }
@@ -374,22 +374,63 @@
 }
 /*desarrollo contacto mobile*/
     .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: baseline;
+        display: grid;
+        grid-template-rows: 0.5fr 2fr;
         align-items: center;
         text-align: center;
+        background-image: url(./assets/Imagenes/portadacontacto.jpg);
+    }
+    .containerBottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .containerBottom .listTittle h3{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .containerBottom .listContact {
+        background-color: #ffffff9c;
+        margin: 10px;
+    }
+    .listContact ul {
+        list-style: none;
+    }
+    .listContact ul li {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .listContact ul li a {
+        text-decoration: none;
+        margin: 10px;
+    }
+    .listContact ul li:nth-child(2) a {
+        color: green;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+    .listContact ul li:nth-child(3) a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
     }
     .contact h2 {
-        font-size: 15px;
-        text-decoration: underline 1px solid black;
+        font-size: 30px;
         padding: 10px;
+        text-align: center;
+        text-shadow:white 4px 2px 6px;
     }
     .contact p {
-        display: none;
+        text-shadow:white 1px 2px 2px;
+
     }
+    
     .formContainer {
         margin: 0px auto;
+        padding-top: 20px;
+        margin: 5px;
+        background-color:#ffffff9c;
+        border-radius:10px;
     }
     .formContainer form {
         display: flex;
@@ -402,12 +443,13 @@
         color: red;
     }
     .formContainer form input, textarea {
-        padding: 0 10px;
+        padding: 0 20px;
         border: 1px solid grey;
         border-radius: 5px;
         margin-bottom: 10px;
         font-size: 10px;
     }
+
 }   
     /*RESPONSIVE*/
     /*area body completo OTHERS*/
@@ -871,7 +913,7 @@ footer {
 }
 .one:hover > .textOne h6 {
     margin-top: 80px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 20px;
     color: #000;
     font-family: 'Times New Roman', Times, serif;
@@ -945,16 +987,29 @@ footer {
     grid-template-rows: auto;
     align-items: center;
 }
+.formContainer h3 {
+    text-align: center;
+    text-shadow: 1px 2px 2px white;
+}
 .formContainer form {
     display: flex;
     flex-direction: column;
     padding: 0px 150px;
 }
-.formContainer form input, textarea {
+
+.firstLine input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-size: 20px;
+}
+.formContainer form .secondLine input, textarea {
     margin: 10px 50px;
     padding: 20px 10px;
     border-radius: 5px;
     font-size: 10px;
+    font-size: 20px;
 }
 .formContainer h4 {
     color: white;
@@ -963,6 +1018,34 @@ footer {
 }
 .formContainer .boton {
     cursor: pointer;
+}
+.listContact .listTittle {
+    color: #ffffff9c;
+}
+.listContact ul {
+    list-style: none;
+}
+.listContact ul li {
+    color: #ffffff9c;
+}
+.listContact ul li:nth-child(2) a {
+    color: green;
+    text-decoration: none;
+}
+.listContact ul li:nth-child(3) a {
+    display: flex;
+    text-decoration: none;
+}
+.listContact ul li:nth-child(3) a:first-child {
+    color: rgb(58, 80, 141);
+
+}
+
+.listContact ul li:nth-child(3) a:nth-child(2) {
+    color: rgb(195, 12, 149);
+}
+.listContact ul li:nth-child(3) a:nth-child(3) {
+    color: rgb(20, 170, 245);
 }
 }
 @keyframes aparecer {
