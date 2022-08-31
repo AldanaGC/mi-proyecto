@@ -670,13 +670,12 @@ footer {
 .headerMenu ul {
     list-style: none;
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     align-content: center;
     margin: 0 150px;
     padding: 10px 30px;
 }
 .headerMenu ul li {
-    display: flex;
     margin: 0 10px;
 
 }
