@@ -662,24 +662,32 @@ footer {
     width: auto;
     height: auto;
     margin: 0 10px;
-    padding: 5px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
 }
 .headerMenu ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-content: center;
+    margin: 0 10px;
+    padding: 10px 30px;
+}
+.headerMenu ul li {
+    display: flex;
+    margin: 0 10px;
+
 }
 .headerMenu ul li .items {
-    display: flex;
-    justify-content: center;
     width: 100%;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: none;
     color: rgb(255, 250, 240);
-    margin: 20px;
+    margin: 5px;
 }
 #check {
     display: none;
