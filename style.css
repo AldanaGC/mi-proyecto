@@ -20,6 +20,8 @@
         grid-template-rows: auto;
         width: auto;
         height: 100vh;  
+        animation: aparecer;
+        animation-duration: 1s;
     }
     #gridIndex {
         display: grid;
@@ -29,6 +31,8 @@
         "seccion2"
         "seccion"
         "footer";
+        animation: aparecer;
+        animation-duration: 3s;
     }
     header {
         grid-area: header;
