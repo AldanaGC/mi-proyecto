@@ -79,11 +79,10 @@
         display: flex;
         position: absolute;
         justify-content: flex-end;
-        padding: 20px;
+        padding: 10px;
     }
     .menu-icon img {
-        box-shadow: inset 2px 4px 5px 8px #e5dac6;
-        width: 5%;
+        width: 10%;
     }
     .headerMenu ul {
         display: block;
