@@ -527,7 +527,6 @@ footer {
     display: none;
 }
 
-
 /*top header universal*/
 .headerTop {
     display: grid;
@@ -561,6 +560,7 @@ footer {
     text-decoration: none;
     color: white;
     width: 100px
+    
 }
 .searchHeader a img {
     width: 100%;
@@ -587,14 +587,13 @@ footer {
     animation-duration: 5s;
 }
 .headerBottom .tittle {
-    font-family: "oswald";
     flex-grow: 10;
     padding: 10px;
 }
 .headerBottom .tittle h1 {
     width: 100%;
     height: auto;
-    font-size: 60px;
+    font-size: 4rem ;
     font-family: "Oswald";
     text-shadow: 5px -1px 5px white;
 }
@@ -632,7 +631,7 @@ footer {
     background: linear-gradient(#ffe6b3, #99440c);
     color: transparent;
     text-shadow: 1px 1px 0px #9f3333a1;
-    font-size: 30px;
+    font-size: 2rem;
     padding: 30px;   
     border-right: solid black 2px;
     background-clip: text;
@@ -695,7 +694,7 @@ footer {
     border-radius: 5px;
     padding: 10px;
 }
-/*footer universal*/
+/*footer bootstrap*/
 
 /*desarrollo index*/
 .firstBox {
@@ -805,7 +804,7 @@ footer {
     padding: 10px 30px;
     text-align: center;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 3rem;
     color: #94b2d8;
     text-shadow: 2px 2px 2px #1d1c1c;
 }
@@ -828,25 +827,16 @@ footer {
     width: 100%;
     padding: 50px 0;
 }
-.sectionBox-one p{
+.sectionBox-one p , .sectionBox-two p {
     width: 100%;
     height: auto;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     justify-content: center ;
     text-align: center;
     color: white;
     text-shadow: -1px 1px 2px #000000;
-}
-.sectionBox-two p {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    text-align: center;
-    padding: 0 100px;
-    margin-bottom: 30px;
-    color: white;
-    text-shadow: -1px 1px 2px #000000;
+    font-family: 'Times New Roman', Times, serif;
 }
 /*desarrollo pagina productos*/
 #carouselOnly {
@@ -918,7 +908,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .one:hover > .textOne {
     opacity: 1;
@@ -926,7 +916,7 @@ footer {
 }
 .one:hover > .textOne h6 {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 10px 20px;
     color: #000;
     font-family: 'Times New Roman', Times, serif;
@@ -986,7 +976,7 @@ footer {
     border-bottom: solid black 2px;
     border-left: black solid 2px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     text-shadow: #ffffffdb -2px -2px 3px;
 }
 .contact p {
@@ -1014,8 +1004,7 @@ footer {
     width: 100%;
     padding: 20px;
     border-radius: 5px;
-    font-size: 10px;
-    font-size: 20px;
+    font-size: 1rem ;
 }
 .formContainer form .secondLine input, textarea {
     margin: 10px 50px;
@@ -1029,8 +1018,20 @@ footer {
     text-align: center;
     padding-bottom: 10px;
 }
+.thirthLine {
+    display: flex;
+    justify-content: center;
+}
 .formContainer .boton {
+    background-color: #1d1c1c69;
+    color: #ffffff9c;
     cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 2px;
+}
+.formContainer .boton:hover {
+    background-color: green;
 }
 .listContact .listTittle {
     color: #ffffff9c;
