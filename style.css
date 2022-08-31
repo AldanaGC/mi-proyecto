@@ -151,7 +151,7 @@
         width: 100%;
         height: auto;
         font-size: 30px;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Oswald';
         text-shadow: 3px 1px 3px #e8d3bd;
     }
     .headerBottom .logo img {
@@ -187,6 +187,7 @@
     .secondBox {
         display: none;
     }
+    /*slider index mobile*/
     .slider {
         width: 100%;
         margin: 10px 0;
@@ -557,6 +558,7 @@ footer {
     border-radius: 10px;
 }
 .searchHeader a {
+    text-decoration: none;
     color: white;
     width: 100px
 }
@@ -763,6 +765,7 @@ footer {
 .secondBox .contentTwo a:hover {
     color: black;
 }
+/*SLIDER INDEX*/
 .slider {
     width: 100%;
     margin: 10px 0;
@@ -784,7 +787,6 @@ footer {
     width: 100%;
     padding:0 50px;
     border-radius: 3px;
-
 }
 
 /*desarrollo sobre nosotros*/
