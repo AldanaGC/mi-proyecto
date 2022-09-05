@@ -76,6 +76,11 @@
         width: 100%;
         height: auto;
         padding: 20px;
+        background-color: #00000052;
+        border-radius: 2px;
+     }
+     .centerIndex p {
+        font-size: 1rem;
      }
      .centerIndex img {
         display: none;
@@ -209,7 +214,7 @@
         width: 100%;
         height: auto;
         overflow: hidden;
-        border: solid black 4px;
+        border: solid #9e6139 2px;
     }
     .slider ul{
         display: flex;
