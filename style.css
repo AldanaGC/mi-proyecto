@@ -87,6 +87,8 @@
     }
     .menu-icon img {
         width: 10%;
+        border: solid #ffffff9c 2px;
+        border-radius: 2px;
     }
     .headerMenu ul {
         display: block;
