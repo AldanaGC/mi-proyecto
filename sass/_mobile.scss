@@ -1,0 +1,202 @@
+/*archivos externos*/
+@import "animation";
+
+/*mobile*/
+@media (max-width:767px) {
+
+/*defino disposicion index*/
+
+    #gridIndex {
+        display: grid;
+        grid-template-areas: 
+        "navegador"
+        "header"
+        "seccion2"
+        "seccion"
+        "footer";
+        animation: aparecer;
+        animation-duration: 3s;
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: navegador;
+        }
+        section {
+            grid-area: seccion;
+        }
+        article {
+            grid-area: seccion2;
+        }
+        footer {
+            grid-area: footer;
+        }
+    /*header index mobile*/
+        .container__index {
+            .headerTop {
+                width: auto;
+                height: auto;
+                .searchHeader {
+                    display: none;
+                }
+                .headerBottom {
+                    background-image: url(../assets/Imagenes/carneasada.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 5px;
+                    padding: 30px 0;
+                    display: flex;
+                    justify-content: baseline;
+                    align-items: center;
+                    width: auto;
+                    height: auto;
+                    margin: 0 auto;
+                    .logo {
+                        flex-grow: 2;
+                        width: 10%;
+                        img {
+                            width: 100%; 
+                        }
+                    }
+                    .tittle {
+                        flex-grow: 3;
+                        padding: 10px;
+                        h1 {
+                            width: 100%;
+                            height: auto;
+                            font-size: 30px;
+                            font-family: 'Oswald';
+                            text-shadow: 3px 1px 3px #fff8f1;
+                        }
+                    }
+                }
+            }
+            .centerIndex {
+                text-align: center;
+                width: 100%;
+                height: auto;
+                padding: 30px 10px;
+                border-top: 2px #000000 solid;
+                .indexSlogan {
+                    width: 100%;
+                    height: auto;
+                    padding: 20px;
+                    background-color: #b77b2c52;
+                    border-radius: 2px;
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+                .imgCenter {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    /*menu mobile*/    
+        .headerMenu {
+            #check {
+                display: none;
+            }
+            .checkbtn {
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+                .menu__icon {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    position: absolute;
+                    justify-content: flex-end;
+                    padding: 10px;
+                    img {
+                        width: 10%;
+                        border: solid #ffffff9c 2px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+            ul {
+                display: block;
+                position: fixed;
+                left: -100%;
+                width: 50%;
+                height: auto;
+                right: 0;
+                border-radius: 20px;
+                margin-top: 40px;
+                margin-right: 15px;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    border: solid #250808 1px;
+                    background-color: #fae4b1c7;
+                    border-radius: 10px;
+                    padding: 10px;
+                    a {
+                        color: #614504;
+                        font-family: "Oswald";
+                        font-size: px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+            #check:checked ~ ul {
+                left: auto;
+                transition:all .25s;
+            }
+        }
+    /*slider mobile*/
+        article {
+            .slider {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                border: solid #9e6139 2px;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300%;
+                    padding: 0;
+                    margin: 0;
+                    animation: slider 20s infinite;
+                    li {
+                        width: 100%;
+                        list-style: none;
+                        img {
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                        } 
+                    }  
+                } 
+            }
+        }
+        .firstBox {
+            width: auto;
+            height: auto;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 3px grey solid;
+            border-radius: 5px;
+            margin: 10px 30px;
+            padding: 10px 0;
+            border-bottom: 3px grey solid;
+            border-radius: 5px;
+            h2 {
+                color: #c0a367;
+                text-shadow: 1px 2px 2px #000000;
+                font-size: 15px;
+                margin: 10px;
+            }
+        }
+        .secondBox {
+            display: none;
+        }
+     
+    }
+}

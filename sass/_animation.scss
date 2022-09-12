@@ -1,0 +1,18 @@
+@keyframes slider {
+    0% {margin-left: 0;}
+    33% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(30deg);
+    }
+}

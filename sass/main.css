@@ -1,0 +1,529 @@
+/*incluyo variable*/ /*archivos externos*/
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(30deg);
+  }
+}
+/*mobile*/
+@media (max-width: 767px) {
+  /*defino disposicion index*/
+  #gridIndex {
+    display: grid;
+    grid-template-areas: "navegador" "header" "seccion2" "seccion" "footer";
+    animation: aparecer;
+    animation-duration: 3s;
+    /*header index mobile*/
+    /*menu mobile*/
+    /*slider mobile*/
+  }
+  #gridIndex header {
+    grid-area: header;
+  }
+  #gridIndex nav {
+    grid-area: navegador;
+  }
+  #gridIndex section {
+    grid-area: seccion;
+  }
+  #gridIndex article {
+    grid-area: seccion2;
+  }
+  #gridIndex footer {
+    grid-area: footer;
+  }
+  #gridIndex .container__index .headerTop {
+    width: auto;
+    height: auto;
+  }
+  #gridIndex .container__index .headerTop .searchHeader {
+    display: none;
+  }
+  #gridIndex .container__index .headerTop .headerBottom {
+    background-image: url(../assets/Imagenes/carneasada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .logo {
+    flex-grow: 2;
+    width: 10%;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .logo img {
+    width: 100%;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .tittle {
+    flex-grow: 3;
+    padding: 10px;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .tittle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-family: "Oswald";
+    text-shadow: 3px 1px 3px #fff8f1;
+  }
+  #gridIndex .container__index .centerIndex {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 10px;
+    border-top: 2px #000000 solid;
+  }
+  #gridIndex .container__index .centerIndex .indexSlogan {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(183, 123, 44, 0.3215686275);
+    border-radius: 2px;
+  }
+  #gridIndex .container__index .centerIndex .indexSlogan p {
+    font-size: 1rem;
+  }
+  #gridIndex .container__index .centerIndex .imgCenter img {
+    display: none;
+  }
+  #gridIndex .headerMenu #check {
+    display: none;
+  }
+  #gridIndex .headerMenu .checkbtn {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  #gridIndex .headerMenu .checkbtn .menu__icon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  #gridIndex .headerMenu .checkbtn .menu__icon img {
+    width: 10%;
+    border: solid rgba(255, 255, 255, 0.6117647059) 2px;
+    border-radius: 2px;
+  }
+  #gridIndex .headerMenu ul {
+    display: block;
+    position: fixed;
+    left: -100%;
+    width: 50%;
+    height: auto;
+    right: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 15px;
+  }
+  #gridIndex .headerMenu ul li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border: solid #250808 1px;
+    background-color: rgba(250, 228, 177, 0.7803921569);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #gridIndex .headerMenu ul li a {
+    color: #614504;
+    font-family: "Oswald";
+    font-size: px;
+    text-decoration: none;
+  }
+  #gridIndex .headerMenu #check:checked ~ ul {
+    left: auto;
+    transition: all 0.25s;
+  }
+  #gridIndex article .slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: solid #9e6139 2px;
+  }
+  #gridIndex article .slider ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    padding: 0;
+    margin: 0;
+    animation: slider 20s infinite;
+  }
+  #gridIndex article .slider ul li {
+    width: 100%;
+    list-style: none;
+  }
+  #gridIndex article .slider ul li img {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #gridIndex .firstBox {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px grey solid;
+    border-radius: 5px;
+    margin: 10px 30px;
+    padding: 10px 0;
+    border-bottom: 3px grey solid;
+    border-radius: 5px;
+  }
+  #gridIndex .firstBox h2 {
+    color: #c0a367;
+    text-shadow: 1px 2px 2px #000000;
+    font-size: 15px;
+    margin: 10px;
+  }
+  #gridIndex .secondBox {
+    display: none;
+  }
+}
+/*import animations*/
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(30deg);
+  }
+}
+/*defino version desktop*/
+@media (min-width: 768px) {
+  /*establezco disposicion index desktop*/
+  #gridIndex {
+    display: grid;
+    grid-template-areas: "header header" "navegador navegador" "seccion2 seccion2" "seccion info" "footer footer";
+    width: auto;
+    height: 100vh;
+    gap: 5px;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 10px;
+    /*desarrllo index desktop*/
+    /*header*/
+    /*menu*/
+    /*slider*/
+    /*Contenido adicional 1*/
+    /*contenido adicional*/
+  }
+  #gridIndex header {
+    grid-area: header;
+  }
+  #gridIndex nav {
+    grid-area: navegador;
+  }
+  #gridIndex article {
+    grid-area: seccion2;
+  }
+  #gridIndex section {
+    grid-area: seccion;
+  }
+  #gridIndex aside {
+    grid-area: info;
+  }
+  #gridIndex footer {
+    grid-area: footer;
+  }
+  #gridIndex .container__index {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    width: 100%;
+  }
+  #gridIndex .container__index .headerTop {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 10px;
+    align-items: center;
+    border-bottom: solid black 2px;
+    background-image: url(../assets/Imagenes/54e4feb73ad47_837_627!.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: aparecer;
+    animation-duration: 2s;
+  }
+  #gridIndex .container__index .headerTop .searchHeader {
+    background: linear-gradient(to right, rgba(224, 202, 150, 0.2588235294), rgba(128, 91, 5, 0.5490196078));
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+    border-radius: 10px;
+  }
+  #gridIndex .container__index .headerTop .searchHeader nav a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+  }
+  #gridIndex .container__index .headerTop .searchHeader a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+  }
+  #gridIndex .container__index .headerTop .searchHeader a img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  #gridIndex .container__index .headerTop .searchHeader input {
+    width: 30%;
+    height: 30px;
+  }
+  #gridIndex .container__index .headerTop .headerBottom {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .logo {
+    width: 15%;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .logo a {
+    flex-grow: 1;
+    margin: 10px;
+    animation-name: aparecer;
+    animation-duration: 5s;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .logo a img {
+    width: 100%;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .tittle {
+    flex-grow: 10;
+    padding: 10px;
+  }
+  #gridIndex .container__index .headerTop .headerBottom .tittle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    font-family: "Oswald";
+    text-shadow: 5px -1px 5px white;
+  }
+  #gridIndex .container__index .centerIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    border-radius: 20px;
+    background-image: url(../assets/Imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 13px 37px #000;
+  }
+  #gridIndex .container__index .centerIndex .indexSlogan {
+    justify-items: center;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  #gridIndex .container__index .centerIndex .indexSlogan p {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(#ffe6b3, #99440c);
+    color: transparent;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.631372549);
+    font-size: 2rem;
+    padding: 30px;
+    border-right: solid black 2px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 3s linear infinite;
+  }
+  #gridIndex .container__index .centerIndex .imgCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
+  }
+  #gridIndex .container__index .centerIndex .imgCenter img {
+    width: 100%;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  #gridIndex .container__index .centerIndex .imgCenter :hover {
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
+  }
+  #gridIndex .headerMenu {
+    background-image: url(../assets/Imagenes/footer.jpg);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
+  }
+  #gridIndex .headerMenu #check {
+    display: none;
+  }
+  #gridIndex .headerMenu .checkbtn .menu__icon {
+    display: none;
+  }
+  #gridIndex .headerMenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 150px;
+    padding: 10px 30px;
+  }
+  #gridIndex .headerMenu ul li {
+    margin: 0 10px;
+  }
+  #gridIndex .headerMenu ul li .items {
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 250, 240);
+    margin: 5px;
+  }
+  #gridIndex .headerMenu ul li :hover {
+    color: #9e6139;
+    background-color: #FAE4B1;
+    border: solid #614504 3px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #gridIndex .slider {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+    overflow: hidden;
+    padding: 50px;
+  }
+  #gridIndex .slider ul {
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: slider 20s infinite;
+  }
+  #gridIndex .slider ul li {
+    width: 100%;
+    list-style: none;
+  }
+  #gridIndex .slider ul li img {
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 3px;
+  }
+  #gridIndex .firstBox {
+    background-image: url(./assets/Imagenes/backgroundGeneral.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-right: #000 solid 1px;
+    border-radius: 5px;
+  }
+  #gridIndex .firstBox h2 {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: solid grey 2px;
+  }
+  #gridIndex .secondBox {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #99917f;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px #000;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  #gridIndex .secondBox h3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+  #gridIndex .secondBox .contentOne, #gridIndex .secondBox .contentTwo {
+    box-shadow: -2px 6px 19px 4px #000;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+  }
+  #gridIndex .secondBox .contentOne a, #gridIndex .secondBox .contentTwo a {
+    text-decoration: none;
+    color: white;
+    text-shadow: -2px 0px 2px rgb(0, 0, 0);
+  }
+  #gridIndex .secondBox .contentOne :hover, #gridIndex .secondBox .contentTwo :hover {
+    color: black;
+  }
+}/*# sourceMappingURL=main.css.map */
