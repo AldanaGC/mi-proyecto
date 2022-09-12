@@ -1,6 +1,9 @@
 /*import animations*/
 @import "animation";
 
+/*VAR sass*/
+$colorP:#000;
+
 /*defino version desktop*/
 @media (min-width: 768px) {
 /*establezco disposicion index desktop*/
@@ -293,7 +296,7 @@
                     text-shadow: -2px 0px 2px rgb(0 0 0);
                 }
                 :hover {
-                    color: black;
+                    color: $colorP;
                 }
             }
         }
