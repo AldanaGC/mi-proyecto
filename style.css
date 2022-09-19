@@ -7,7 +7,6 @@
     font-family: "oswald";
 }
 /*responsive mobile*/
-
 @media (max-width:767px){
     /*gridmobile index*/
     #gridOthers {

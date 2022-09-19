@@ -1,4 +1,4 @@
-/*incluyo variable*/ /*archivos externos*/
+/*incluyo variable*/ /*import animations*/
 @keyframes slider {
   0% {
     margin-left: 0;
@@ -27,9 +27,10 @@
     filter: hue-rotate(30deg);
   }
 }
-/*mobile*/
+/*VAR sass*/
+/*index mobile*/
 @media (max-width: 767px) {
-  /*defino disposicion index*/
+  /*defino disposicion index mobile*/
   #gridIndex {
     display: grid;
     grid-template-areas: "navegador" "header" "seccion2" "seccion" "footer";
@@ -209,36 +210,6 @@
     display: none;
   }
 }
-/*import animations*/
-@keyframes slider {
-  0% {
-    margin-left: 0;
-  }
-  33% {
-    margin-left: 0;
-  }
-  35% {
-    margin-left: -100%;
-  }
-  66% {
-    margin-left: -100%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-  100% {
-    margin-left: -200%;
-  }
-}
-@keyframes text {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(30deg);
-  }
-}
-/*VAR sass*/
 /*defino version desktop*/
 @media (min-width: 768px) {
   /*establezco disposicion index desktop*/
@@ -346,6 +317,10 @@
   #gridIndex .container__index .headerTop .headerBottom .logo a img {
     width: 100%;
   }
+  #gridIndex .container__index .headerTop .headerBottom .logo a :hover {
+    transform: rotate(160deg);
+    transition-duration: 1.2s;
+  }
   #gridIndex .container__index .headerTop .headerBottom .tittle {
     flex-grow: 10;
     padding: 10px;
@@ -403,11 +378,6 @@
     border-radius: 20px;
     justify-items: center;
     align-items: center;
-  }
-  #gridIndex .container__index .centerIndex .imgCenter :hover {
-    backdrop-filter: blur(10px);
-    filter: blur(4px);
-    transition: 0.5s ease;
   }
   #gridIndex .headerMenu {
     background-image: url(../assets/Imagenes/footer.jpg);
@@ -525,6 +495,6 @@
     text-shadow: -2px 0px 2px rgb(0, 0, 0);
   }
   #gridIndex .secondBox .contentOne :hover, #gridIndex .secondBox .contentTwo :hover {
-    color: #000;
+    color: #250808;
   }
 }/*# sourceMappingURL=main.css.map */
