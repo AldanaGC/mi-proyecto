@@ -499,4 +499,171 @@
   #gridIndex .secondBox .extend--second {
     background-color: #67c0b0;
   }
+}
+/*desarrollo nosotros mobile*/
+@media (max-width: 767px) {
+  #gridOthers {
+    display: grid;
+    grid-template-areas: "navegador" "header" "seccion" "footer";
+    grid-template-rows: auto;
+    width: auto;
+    height: 100vh;
+    animation: aparecer;
+    animation-duration: 1s;
+  }
+  #gridOthers header {
+    grid-area: header;
+  }
+  #gridOthers nav {
+    grid-area: navegador;
+  }
+  #gridOthers section {
+    grid-area: seccion;
+  }
+  #gridOthers article {
+    grid-area: seccion2;
+  }
+  #gridOthers footer {
+    grid-area: footer;
+  }
+  #gridOthers .container__nosotros {
+    display: grid;
+  }
+  #gridOthers .container__nosotros .centerNosotros {
+    display: none;
+  }
+  #gridOthers .container__nosotros .headerTop {
+    width: auto;
+    height: auto;
+  }
+  #gridOthers .container__nosotros .headerTop .searchHeader {
+    display: none;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom {
+    background-image: url(../assets/Imagenes/carneasada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom .logo {
+    flex-grow: 2;
+    width: 10%;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom .logo img {
+    width: 100%;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom .tittle {
+    flex-grow: 3;
+    padding: 10px;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom .tittle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-family: "Oswald";
+    text-shadow: 3px 1px 3px #fff8f1;
+  }
+  #gridOthers .headerMenu #check {
+    display: none;
+  }
+  #gridOthers .headerMenu .checkbtn {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  #gridOthers .headerMenu .checkbtn .menu__icon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  #gridOthers .headerMenu .checkbtn .menu__icon img {
+    width: 10%;
+    border: solid rgba(255, 255, 255, 0.6117647059) 2px;
+    border-radius: 2px;
+  }
+  #gridOthers .headerMenu ul {
+    display: block;
+    position: fixed;
+    left: -100%;
+    width: 50%;
+    height: auto;
+    right: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 15px;
+  }
+  #gridOthers .headerMenu ul li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border: solid #250808 1px;
+    background-color: rgba(250, 228, 177, 0.7803921569);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #gridOthers .headerMenu ul li a {
+    color: #614504;
+    font-family: "Oswald";
+    font-size: px;
+    text-decoration: none;
+  }
+  #gridOthers .headerMenu #check:checked ~ ul {
+    left: auto;
+    transition: all 0.25s;
+  }
+  #gridOthers .sectionContainer {
+    display: grid;
+    grid-template-rows: auto;
+    background-image: url(../assets/Imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #gridOthers .sectionContainer .tittle {
+    border-bottom: 2px black solid;
+    margin: 10px 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #gridOthers .sectionContainer .tittle h2 {
+    font-size: 20px;
+    text-shadow: white 3px -1px 3px;
+  }
+  #gridOthers .sectionContainer .sectionBox-one {
+    margin: 10px 20px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3882352941);
+  }
+  #gridOthers .sectionContainer .sectionBox-one p {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+  }
+  #gridOthers .sectionContainer .sectionBox-one video {
+    display: none;
+  }
+  #gridOthers .sectionContainer .sectionBox-two {
+    margin: 10px 20px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3882352941);
+  }
+  #gridOthers .sectionContainer .sectionBox-two p {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
