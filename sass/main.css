@@ -500,6 +500,8 @@
     background-color: #67c0b0;
   }
 }
+/*mixin's mobile header universal, menu universal mobile*/
+/*mixin desarrollo nosotros y distribuidores mobile*/
 /*desarrollo nosotros mobile*/
 @media (max-width: 767px) {
   #gridOthers {

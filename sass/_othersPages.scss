@@ -1,3 +1,4 @@
+/*mixin's mobile header universal, menu universal mobile*/
 @mixin headerOthers {
         width: auto;
         height: auto;
@@ -91,6 +92,7 @@
             transition:all .25s;
         }
     }
+/*mixin desarrollo nosotros y distribuidores mobile*/
 @mixin nosDist {
     display: grid;
     grid-template-rows: auto;
