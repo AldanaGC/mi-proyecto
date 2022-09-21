@@ -505,7 +505,7 @@
 /*header desktop*/
 /*menu desktop*/
 /*desarrollo nosotros dist desktop*/
-/*desarrollo nosotros mobile*/
+/*desarrollo mobile*/
 @media (max-width: 767px) {
   #gridOthers {
     display: grid;
@@ -515,6 +515,12 @@
     height: 100vh;
     animation: aparecer;
     animation-duration: 1s;
+    /*header page nosotros mobile*/
+    /*header page productos mobile*/
+    /*menu universal*/
+    /*page nosotros/distribuidores mobile*/
+    /*page prpductos mobile*/
+    /*page contactos*/
   }
   #gridOthers header {
     grid-area: header;
@@ -574,6 +580,53 @@
     font-size: 30px;
     font-family: "Oswald";
     text-shadow: 3px 1px 3px #fff8f1;
+  }
+  #gridOthers .container__nosotros .headerTop .headerBottom {
+    background-image: url(../assets/Imagenes/54e4feb73ad47_837_627!.jpg);
+  }
+  #gridOthers .container__productos {
+    display: grid;
+  }
+  #gridOthers .container__productos .headerTop {
+    width: auto;
+    height: auto;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader {
+    display: none;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom {
+    background-image: url(../assets/Imagenes/carneasada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .logo {
+    flex-grow: 2;
+    width: 10%;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .logo img {
+    width: 100%;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .tittle {
+    flex-grow: 3;
+    padding: 10px;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .tittle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-family: "Oswald";
+    text-shadow: 3px 1px 3px #fff8f1;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom {
+    background-image: url(../assets/Imagenes/54e4feb73ad47_837_627!.jpg);
   }
   #gridOthers .headerMenu #check {
     display: none;
@@ -671,8 +724,186 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
   }
+  #gridOthers .sectionContainer .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 80px;
+  }
+  #gridOthers .sectionContainer .list ul {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(209, 203, 198, 0.6196078431);
+    border-radius: 5px;
+    list-style: none;
+  }
+  #gridOthers .sectionContainer .list ul li {
+    border-bottom: solid rgba(80, 63, 25, 0.3803921569) 1px;
+    color: #614504;
+  }
+  #gridOthers .sectionContainer .list ul li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #gridOthers .sectionContainer .list .iframe {
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: black solid 2px;
+    border-left: black solid 2px;
+    margin: 10px;
+  }
+  #gridOthers .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+  }
+  #gridOthers .products .tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+  }
+  #gridOthers .products .tittle h2 {
+    padding: 10px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #gridOthers .products .clasif {
+    display: grid;
+    grid-template-rows: 0.1fr 2fr;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+  }
+  #gridOthers .products .clasif h3 {
+    background-color: beige;
+    padding: 20px;
+    margin: 0 20px;
+    font-size: 15px;
+  }
+  #gridOthers .products .clasif .items1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: baseline;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+  }
+  #gridOthers .products .clasif .items1 .one {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: solid 3px black;
+    border-radius: 10px;
+  }
+  #gridOthers .products .clasif .items1 .one .textOne {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    width: 20%;
+    border-radius: 5px;
+  }
+  #gridOthers .products .clasif .items1 .one .textOne h6 {
+    color: white;
+    font-size: 10px;
+  }
+  #gridOthers .products .clasif .items1 .one img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #gridOthers .contact {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    align-items: center;
+    text-align: center;
+    background-image: url(../assets/Imagenes/portadacontacto.jpg);
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  #gridOthers .contact .tittleContact div h2 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: white 4px 2px 6px;
+  }
+  #gridOthers .contact .tittleContact div p {
+    font-size: 10px;
+    text-shadow: white 1px 2px 2px;
+  }
+  #gridOthers .contact .containerBottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  #gridOthers .contact .containerBottom .formContainer {
+    margin: 0px auto;
+    padding-top: 20px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.6117647059);
+    border-radius: 10px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .firstLine input {
+    width: 100%;
+  }
+  #gridOthers .contact .containerBottom .formContainer form input, #gridOthers .contact .containerBottom .formContainer form textarea {
+    padding: 0 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  #gridOthers .contact .containerBottom .listContact {
+    background-color: rgba(255, 255, 255, 0.6117647059);
+    padding: 0 10px;
+    margin: 20px 50px;
+    border-radius: 10px;
+  }
+  #gridOthers .contact .containerBottom .listContact .listTittle h3 {
+    font-size: 15px;
+    margin: 10px;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList ul {
+    list-style: none;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList ul li {
+    font-size: 10px;
+    margin: 10px;
+    list-style: none;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList ul li a {
+    text-decoration: none;
+    margin: 10px;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList ul li :nth-child(2) a {
+    color: green;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList ul li :nth-child(3) a {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }
-/*desarrollo nosotros desktop*/
+/*desarrollo desktop*/
 @media (min-width: 768px) {
   #gridOthers {
     display: grid;
@@ -681,6 +912,11 @@
     grid-template-columns: none;
     width: auto;
     height: 100vh;
+    /*header nosotros desktop*/
+    /*header productos desktop*/
+    /*menu universal*/
+    /*nosotros/distribuidores desktop*/
+    /*productos desktop*/
   }
   #gridOthers header {
     grid-area: header;
@@ -777,6 +1013,93 @@
   #gridOthers .container__nosotros .centerNosotros {
     display: none;
   }
+  #gridOthers .container__productos {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    width: 100%;
+  }
+  #gridOthers .container__productos .headerTop {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 10px;
+    align-items: center;
+    border-bottom: solid black 2px;
+    background-image: url(../assets/Imagenes/54e4feb73ad47_837_627!.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: aparecer;
+    animation-duration: 2s;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader {
+    background: linear-gradient(to right, rgba(224, 202, 150, 0.2588235294), rgba(128, 91, 5, 0.5490196078));
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+    border-radius: 10px;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader nav a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader a img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  #gridOthers .container__productos .headerTop .searchHeader input {
+    width: 30%;
+    height: 30px;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .logo {
+    flex-grow: 1;
+    width: 10%;
+    margin: 10px;
+    animation-name: aparecer;
+    animation-duration: 5s;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .logo img {
+    width: 100%;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .tittle {
+    flex-grow: 10;
+    padding: 10px;
+  }
+  #gridOthers .container__productos .headerTop .headerBottom .tittle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    font-family: "Oswald";
+    text-shadow: 5px -1px 5px white;
+  }
+  #gridOthers .container__productos .centerNosotros {
+    display: none;
+  }
+  #gridOthers .container__productos #carouselOnly {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
   #gridOthers .headerMenu {
     background-image: url(../assets/Imagenes/footer.jpg);
     border-radius: 10px;
@@ -869,5 +1192,208 @@
     color: white;
     text-shadow: -1px 1px 2px #000000;
     font-family: "Times New Roman", Times, serif;
+  }
+  #gridOthers .sectionContainer .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 80px;
+  }
+  #gridOthers .sectionContainer .list ul {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(209, 203, 198, 0.6196078431);
+    border-radius: 5px;
+    list-style: none;
+  }
+  #gridOthers .sectionContainer .list ul li {
+    border-bottom: solid rgba(80, 63, 25, 0.3803921569) 1px;
+    color: #614504;
+  }
+  #gridOthers .sectionContainer .list ul li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #gridOthers .sectionContainer .list .iframe {
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: black solid 2px;
+    border-left: black solid 2px;
+    margin: 10px;
+  }
+  #gridOthers .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 0.4fr 0.5fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  #gridOthers .products .tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  #gridOthers .products .tittle h2 {
+    padding: 10px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #gridOthers .products .clasif {
+    display: grid;
+    grid-template-rows: 0.1fr 2fr;
+    width: 100%;
+    height: auto;
+    padding: 0 200px;
+  }
+  #gridOthers .products .clasif h3 {
+    background-color: beige;
+    padding: 20px;
+    margin: 0 20px;
+  }
+  #gridOthers .products .clasif .items1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: baseline;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+  }
+  #gridOthers .products .clasif .items1 .one {
+    display: flex;
+    justify-content: center;
+    border: solid 3px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #gridOthers .products .clasif .items1 .one img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+  }
+  #gridOthers .products .clasif .items1 .one .textOne {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4392156863);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    font-size: 1rem;
+  }
+  #gridOthers .products .clasif .items1 .one:hover > .textOne {
+    opacity: 1;
+    visibility: visible;
+  }
+  #gridOthers .products .clasif .items1 .one:hover > .textOne h6 {
+    margin-top: 80px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: white 1px 1px 1px;
+  }
+  #gridOthers .contact {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 30px;
+    background-image: url(../assets/Imagenes/portadacontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px;
+  }
+  #gridOthers .contact .tittle div h2 {
+    border-bottom: solid black 2px;
+    border-left: black solid 2px;
+    padding: 20px;
+    font-size: 2rem;
+    text-shadow: rgba(255, 255, 255, 0.8588235294) -2px -2px 3px;
+  }
+  #gridOthers .contact .tittle div p {
+    margin: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-shadow: rgba(255, 255, 255, 0.8588235294) -1px 0px 2px;
+  }
+  #gridOthers .contact .containerBottom .formContainer {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  #gridOthers .contact .containerBottom .formContainer h3 {
+    text-align: center;
+    text-shadow: 1px 2px 2px white;
+  }
+  #gridOthers .contact .containerBottom .formContainer form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 150px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .firstLine input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .secondLine input {
+    margin: 10px 50px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-size: 20px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .thirthLine {
+    display: flex;
+    justify-content: center;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .thirthLine .boton {
+    background-color: rgba(29, 28, 28, 0.4117647059);
+    color: rgba(255, 255, 255, 0.6117647059);
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 2px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .thirthLine .boton:hover {
+    background-color: green;
+  }
+  #gridOthers .contact .containerBottom .formContainer form h4 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #gridOthers .contact .containerBottom .listContact .listTittle {
+    color: rgba(255, 255, 255, 0.6117647059);
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList .list-unstyled {
+    list-style: none;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList .list-unstyled li {
+    color: rgba(255, 255, 255, 0.6117647059);
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList .list-unstyled li:nth-child(2) a {
+    color: green;
+    text-decoration: none;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList .list-unstyled li:nth-child(3) a {
+    display: flex;
+    text-decoration: none;
+  }
+  #gridOthers .contact .containerBottom .listContact .contactList .list-unstyled li:nth-child(3) a a :first-child {
+    color: rgb(58, 80, 141);
   }
 }/*# sourceMappingURL=main.css.map */
